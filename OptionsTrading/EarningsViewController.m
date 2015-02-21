@@ -7,8 +7,9 @@
 //
 
 #import "EarningsViewController.h"
+#import "EarningsTableViewCell.h"
 
-@interface EarningsViewController ()
+@interface EarningsViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @end
 
@@ -19,19 +20,35 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UITableViewDataSource/Delegate
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1; //return self.sections.count;
 }
 
-/*
-#pragma mark - Navigation
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    EarningsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EarningsCell"];
+    if (!cell)
+    {
+        [tableView registerNib:[UINib nibWithNibName:@"EarningsTableCell" bundle:nil] forCellReuseIdentifier:@"EarningsCell"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"EarningsCell"];
+    }
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    cell.dateLabel.text = @"Mar 1";
+    cell.timeLabel.text = @"8 AM";
+    cell.tickerLabel.text = @"AAPL";
+    cell.historicalMoveLabel.text = @"3.12%";
+    cell.straddleMoveLabel.text = @"0.42%";
+
+    return cell;
 }
-*/
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    self.pickedSection =[self.sections objectAtIndex:indexPath.row];
+}
+
 
 @end

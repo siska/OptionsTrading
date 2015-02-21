@@ -16,6 +16,8 @@
 		1247A7981A98F27000384952 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1247A7961A98F27000384952 /* LaunchScreen.xib */; };
 		1247A7A41A98F27000384952 /* OptionsTradingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1247A7A31A98F27000384952 /* OptionsTradingTests.m */; };
 		1247A7AF1A98F32000384952 /* EarningsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1247A7AE1A98F32000384952 /* EarningsViewController.m */; };
+		1247A7B11A99161000384952 /* EarningsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1247A7B01A99161000384952 /* EarningsTableCell.xib */; };
+		1247A7B41A9918A700384952 /* EarningsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1247A7B31A9918A700384952 /* EarningsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		1247A7A31A98F27000384952 /* OptionsTradingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionsTradingTests.m; sourceTree = "<group>"; };
 		1247A7AD1A98F32000384952 /* EarningsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarningsViewController.h; sourceTree = "<group>"; };
 		1247A7AE1A98F32000384952 /* EarningsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarningsViewController.m; sourceTree = "<group>"; };
+		1247A7B01A99161000384952 /* EarningsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EarningsTableCell.xib; path = ../EarningsTableCell.xib; sourceTree = "<group>"; };
+		1247A7B21A9918A700384952 /* EarningsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EarningsTableViewCell.h; path = ../EarningsTableViewCell.h; sourceTree = "<group>"; };
+		1247A7B31A9918A700384952 /* EarningsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EarningsTableViewCell.m; path = ../EarningsTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +94,13 @@
 				1247A7881A98F27000384952 /* AppDelegate.h */,
 				1247A7891A98F27000384952 /* AppDelegate.m */,
 				1247A7911A98F27000384952 /* Main.storyboard */,
+				1247A7B01A99161000384952 /* EarningsTableCell.xib */,
 				1247A78E1A98F27000384952 /* RootViewController.h */,
 				1247A78F1A98F27000384952 /* RootViewController.m */,
 				1247A7AD1A98F32000384952 /* EarningsViewController.h */,
 				1247A7AE1A98F32000384952 /* EarningsViewController.m */,
+				1247A7B21A9918A700384952 /* EarningsTableViewCell.h */,
+				1247A7B31A9918A700384952 /* EarningsTableViewCell.m */,
 				1247A7941A98F27000384952 /* Images.xcassets */,
 				1247A7961A98F27000384952 /* LaunchScreen.xib */,
 				1247A78B1A98F27000384952 /* OptionsTrading.xcdatamodeld */,
@@ -208,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1247A7931A98F27000384952 /* Main.storyboard in Resources */,
+				1247A7B11A99161000384952 /* EarningsTableCell.xib in Resources */,
 				1247A7981A98F27000384952 /* LaunchScreen.xib in Resources */,
 				1247A7951A98F27000384952 /* Images.xcassets in Resources */,
 			);
@@ -227,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1247A7B41A9918A700384952 /* EarningsTableViewCell.m in Sources */,
 				1247A78A1A98F27000384952 /* AppDelegate.m in Sources */,
 				1247A7AF1A98F32000384952 /* EarningsViewController.m in Sources */,
 				1247A78D1A98F27000384952 /* OptionsTrading.xcdatamodeld in Sources */,
