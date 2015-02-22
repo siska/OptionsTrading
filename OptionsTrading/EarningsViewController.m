@@ -93,12 +93,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    self.pickedSection =[self.sections objectAtIndex:indexPath.row];
-}
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    
+    [self performSegueWithIdentifier:@"ESRXSegue" sender:nil];
 }
 
 
